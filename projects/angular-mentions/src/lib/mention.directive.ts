@@ -211,6 +211,10 @@ export class MentionDirective implements OnChanges {
       ) {
         if (event.keyCode === KEY_SPACE) {
           this.startPos = -1;
+
+          if (this.activeConfig.spaceCancels) {
+            this.stopSearch()
+          }
         }
         else if (event.keyCode === KEY_BACKSPACE && pos > 0) {
           pos--;

@@ -32,5 +32,8 @@ export interface Mentions {
   mentionSelect?:(item: any) => (string);
 
   // change menu positioning method. 'align' or 'absolute'
-  positioning?:string
+  positioning?: string;
+
+  // cancel search after space is pressed
+  spaceCancels?: boolean;
 }

@@ -16,7 +16,7 @@ To install and start the demo application:
 
 ### Fork
 
-This fork provides the 'positioning' config option.
+This fork provides the 'positioning' and 'spaceCancels' config option.
 
 ### Usage
 
@@ -69,6 +69,7 @@ The following optional configuration items can be used.
 | maxItems      | ∞        | Limit the number of items shown in the text. The default is no limit. |
 | mentionSelect |          | An optional function to format the selected item before inserting the text. |
 | positioning   | align    | 'align' or 'absolute'. When 'align' menu will be left aligned within triggerChar. When 'absolute' no left alignment will be applied. |
+| spaceCancels  | false    | Cancel search if space is pressed. |
 
 For Example: 
 
