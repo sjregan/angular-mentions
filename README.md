@@ -14,6 +14,10 @@ To install and start the demo application:
     npm install
     ng serve
 
+### Fork
+
+This fork provides the 'positioning' and 'spaceCancels' config option.
+
 ### Usage
 
 Add the package as a dependency to your project using:
