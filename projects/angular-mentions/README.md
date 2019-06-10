@@ -68,7 +68,7 @@ The following optional configuration items can be used.
 | dropUp        | false    | Show the menu above the cursor instead of below. |
 | maxItems      | ∞        | Limit the number of items shown in the text. The default is no limit. |
 | mentionSelect |          | An optional function to format the selected item before inserting the text. |
-| positioning   | align    | 'align' or 'absolute'. When 'align' menu will be left aligned within triggerChar. When 'absolute' no left alignment will be applied. |
+| positioning   | align    | 'align' or 'absolute'. When 'align' menu will be left aligned within triggerChar and top positioning will be applied. When 'absolute' no positioning is performed, relying on CSS. |
 | spaceCancels  | false    | Cancel search if space is pressed. |
 
 For Example: 
