@@ -30,4 +30,7 @@ export interface Mentions {
   
   // optional function to format the selected item before inserting the text
   mentionSelect?:(item: any) => (string);
+
+  // change menu positioning method. 'align' or 'absolute'
+  positioning?:string
 }

@@ -14,6 +14,10 @@ To install and start the demo application:
     npm install
     ng serve
 
+### Fork
+
+This fork provides the 'positioning' config option.
+
 ### Usage
 
 Add the package as a dependency to your project using:
@@ -64,6 +68,7 @@ The following optional configuration items can be used.
 | dropUp        | false    | Show the menu above the cursor instead of below. |
 | maxItems      | ∞        | Limit the number of items shown in the text. The default is no limit. |
 | mentionSelect |          | An optional function to format the selected item before inserting the text. |
+| positioning   | align    | 'align' or 'absolute'. When 'align' menu will be left aligned within triggerChar. When 'absolute' no left alignment will be applied. |
 
 For Example: 
 

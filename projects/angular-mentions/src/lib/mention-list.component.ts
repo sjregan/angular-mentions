@@ -52,6 +52,7 @@ export class MentionListComponent implements OnInit {
   activeIndex: number = 0;
   hidden: boolean = false;
   dropUp: boolean = false;
+  positioning: string = 'align'
   private coords: {top:number, left:number} = {top:0, left:0};
   private offset: number = 0;
   constructor(private element: ElementRef) {}
@@ -155,12 +156,16 @@ export class MentionListComponent implements OnInit {
     this.positionElement(left, top, dropUp);
   }
 
-  private positionElement(left:number=this.coords.left, top:number=this.coords.top, dropUp:boolean=this.dropUp) {
+  private positionElement(left:number=this.coords.left, top:number=this.coords.top, dropUp:boolean=this.dropUp, positioning: string = this.positioning) {
     const el: HTMLElement = this.element.nativeElement;
     top += dropUp ? 0 : this.offset; // top of list is next line
     el.className = dropUp ? 'dropup' : null;
     el.style.position = "absolute";
-    el.style.left = left + 'px';
+
+    if (positioning === 'align') {
+      el.style.left = left + 'px';
+    }
+
     el.style.top = top + 'px';
   }  
 
